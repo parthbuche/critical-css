@@ -1,0 +1,29 @@
+{
+  "name": "critical-css",
+  "version": "0.0.1",
+  "description": "Critical CSS Tool is used for extracting critical css from any website to optimize overall website page performance.",
+  "author": "Parth Buche",
+  "contributors": [
+    "Parth Buche"
+  ],
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parthbuche/critical-css-tool.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "devDependencies": {
+    "critical": "^1.3.9",
+    "express": "^4.17.1"
+  }
+}

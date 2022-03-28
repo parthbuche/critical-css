@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title> Critical CSS Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Critical CSS Tool is used for extracting critical css from any website to improve the overall website or page performance.">
+ 
+  <!--Style Sheet CSS-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+</head>
+<body>
+  <main role="main">
+    <section class="jumbotron text-center">
+      <h1 class="jumbotron-heading">Generate Critical CSS</h1>
+      <p class="lead text-muted">Please paste a url of the page in the textbox below to generate critical css for the
+        page</p>
+      <p>Copy the generated critical CSS and use it in your page.<p>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8 col-sm-6">
+          <form id="critical" method="POST">
+            <div class="form-group">
+              <label for="exampleInput">Page Url</label>
+              <input type="text" name="critical" class="form-control" id="exampleInput" aria-describedby="helpText"
+                placeholder="Enter page url" required>
+              <small id="helpText" class="form-text text-muted">for eg.
+                <span>https://www.google.com</span></small>
+            </div>
+            <button type="submit" id="critical-gen" class="btn btn-primary">Generate Critical CSS</button>
+          </form>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-6">
+          <div id="loading">
+            <div class="loader">
+            </div>
+            Generating critical css please wait...
+          </div>
+          <div id="critical-css"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+</body>
+</html>
